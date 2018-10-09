@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Laboratorio 5 </title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    </head>
+    <body>
+        <div class = "mainDiv">
+            <div class = "header">
+                <img src="chat-icon2.png" class ="chatIcon">
+                <div class = "title"> CHAT PRO </div>
+            </div>
+            <div id = "messagesArea" class="messagesArea">
+            </div>
+            <!-- <input type="button" value="hola" onclick="createElements()"/> -->
+            <div id = "writeArea">
+                <div class = "messageEdit">
+                    <input
+                        maxlength="140"
+                        class="effect-it"
+                        type="text"
+                        id="textEdit"
+                        placeholder="Type a message"/>
+
+                        <span class="focus-bg"></span>
+
+                    <input
+                        class="myButton"
+                        onclick="sendMessage()"
+                        type="submit"
+                        id="sendButton"
+                        value="Send"/>
+                </div>
+            </div>
+        </div>
+        <script src="functions.js" type="text/javascript"></script>
+    </body>
+</html>
